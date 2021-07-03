@@ -1,6 +1,5 @@
 import { Meta } from "@storybook/react";
 import { OverviewCard } from ".";
-import { CicleIcon } from "../../atoms/CicleIcon";
 import { IoDocumentTextOutline } from "react-icons/io5";
 
 export default {
@@ -10,11 +9,11 @@ export default {
 
 export const Document = () => (
   <div style={{ width: "300px" }}>
-    <OverviewCard>
-      <CicleIcon
-        className="document"
-        icon={<IoDocumentTextOutline size="24" />}
-      />
-    </OverviewCard>
+    <OverviewCard
+      icon={<IoDocumentTextOutline size='24' />}
+      iconType="document"
+      title="New Document"
+      subtitle="Europe Trip"
+    />
   </div>
 );
